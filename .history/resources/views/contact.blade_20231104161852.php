@@ -1,0 +1,98 @@
+@extends('layouts.frontend')
+
+@section('content')
+<!--==================== HOME ====================-->
+<section>
+        <div class="swiper-container gallery-top">
+          <div class="swiper-wrapper">
+            <!--========== ISLANDS 1 ==========-->
+            <section class="islands swiper-slide">
+              <img
+                src="{{ asset('frontend/assets/img/contact-hero.jpg') }}"
+                alt=""
+                class="islands__bg"
+              />
+              <div class="bg__overlay">
+                <div class="islands__container container">
+                  <div class="islands__data">
+                    <h2 class="islands__subtitle">Cần Du Lịch</h2>
+                    <h1 class="islands__title">Hãy Liên Hệ Chúng Tôi</h1>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <div class="contact__container container grid">
+          <div class="contact__images">
+            <div class="contact__orbe"></div>
+
+            <div class="contact__img">
+              <img src="{{ asset('frontend/assets/img/contact.jpg') }}" alt="" />
+            </div>
+          </div>
+
+          <div class="contact__content">
+            <div class="contact__data">
+              <span class="section__subtitle">Cần Trợ Giúp</span>
+              <h2 class="section__title">Đừng ngần ngại liên hệ với chúng tôi</h2>
+              <p class="contact__description">
+                Có vấn đề gì khi tìm địa điểm cho chuyến đi tiếp theo của bạn không? Cần người hướng dẫn trong chuyến đi đầu tiên hoặc cần tư vấn về du lịch? Chỉ cần liên hệ với chúng tôi.
+              </p>
+            </div>
+
+            <div class="contact__card">
+              <div class="contact__card-box">
+                <div class="contact__card-info">
+                  <i class="bx bxs-phone-call"></i>
+                  <div>
+                    <h3 class="contact__card-title">Gọi</h3>
+                    <p class="contact__card-description">0949.083.414</p>
+                  </div>
+                </div>
+
+                <button class="button contact__card-button">Gọi Ngay</button>
+              </div>
+              <div class="contact__card-box">
+                <div class="contact__card-info">
+                  <i class="bx bxs-message-rounded-dots"></i>
+                  <div>
+                    <h3 class="contact__card-title">Zalo</h3>
+                    <p class="contact__card-description">0949.083.414</p>
+                  </div>
+                </div>
+
+                <button class="button contact__card-button">Nhắn Tin Ngay</button>
+              </div>
+              <div class="contact__card-box">
+                <div class="contact__card-info">
+                  <i class="bx bxs-video"></i>
+                  <div>
+                    <h3 class="contact__card-title">Video Call</h3>
+                    <p class="contact__card-description">022.321.165.19</p>
+                  </div>
+                </div>
+
+                <button class="button contact__card-button">
+                  Video Call Now
+                </button>
+              </div>
+              <div class="contact__card-box">
+                <div class="contact__card-info">
+                  <i class="bx bxs-phone-call"></i>
+                  <div>
+                    <h3 class="contact__card-title">Message</h3>
+                    <p class="contact__card-description">022.321.165.19</p>
+                  </div>
+                </div>
+
+                <button class="button contact__card-button">Message Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+@endsection
